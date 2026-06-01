@@ -35,14 +35,21 @@ Stylish Readme renders widgets as standalone SVGs. Because GitHub natively suppo
 Copy the markdown snippets below and paste them into your README. You can change the parameters in the URL to customize the data, layout, and colors.
 
 ### 1. Developer Profile Card
-Combines your avatar, role, bio, and skills into a clean header block.
+Combines your avatar, role, bio, and skills into a clean header block. Use `radius` to go from sharp and structured to soft and modern.
 
-**Theme: Paper**
+**Theme: Paper | Sharp edges (`radius=0`)**
 ```md
-![Profile Card](https://readmeme.eu.cc/api/profile.svg?avatar=https%3A%2F%2Fgithub.com%2Fcu-sanjay.png&name=Sanjay&role=Full-Stack+Developer&bio=Building+cool+things+with+code+n+coffee.&skills=HTML%2CJS%2CREACT%2CNODE%2CPYTHON%2CGIT%2CSQL&handle=cu-sanjay&theme=paper)
-````
+![Profile Card](https://readmeme.eu.cc/api/profile.svg?avatar=https%3A%2F%2Fgithub.com%2Fcu-sanjay.png&name=Sanjay&role=Full-Stack+Developer&bio=Building+cool+things+with+code+n+coffee.&skills=HTML%2CJS%2CREACT%2CNODE%2CPYTHON%2CGIT%2CSQL&handle=cu-sanjay&theme=paper&radius=0)
+```
 
-<img src="https://readmeme.eu.cc/api/profile.svg?avatar=https%3A%2F%2Fgithub.com%2Fcu-sanjay.png&name=Sanjay&role=Full-Stack+Developer&bio=Building+cool+things+with+code+n+coffee.&skills=HTML%2CJS%2CREACT%2CNODE%2CPYTHON%2CGIT%2CSQL&handle=cu-sanjay&theme=paper" alt="Profile Preview" />
+<img src="https://readmeme.eu.cc/api/profile.svg?avatar=https%3A%2F%2Fgithub.com%2Fcu-sanjay.png&name=Sanjay&role=Full-Stack+Developer&bio=Building+cool+things+with+code+n+coffee.&skills=HTML%2CJS%2CREACT%2CNODE%2CPYTHON%2CGIT%2CSQL&handle=cu-sanjay&theme=paper&radius=0" alt="Profile Preview Sharp" />
+
+**Theme: Paper | Soft edges (`radius=12`)**
+```md
+![Profile Card](https://readmeme.eu.cc/api/profile.svg?avatar=https%3A%2F%2Fgithub.com%2Fcu-sanjay.png&name=Sanjay&role=Full-Stack+Developer&bio=Building+cool+things+with+code+n+coffee.&skills=HTML%2CJS%2CREACT%2CNODE%2CPYTHON%2CGIT%2CSQL&handle=cu-sanjay&theme=paper&radius=12)
+```
+
+<img src="https://readmeme.eu.cc/api/profile.svg?avatar=https%3A%2F%2Fgithub.com%2Fcu-sanjay.png&name=Sanjay&role=Full-Stack+Developer&bio=Building+cool+things+with+code+n+coffee.&skills=HTML%2CJS%2CREACT%2CNODE%2CPYTHON%2CGIT%2CSQL&handle=cu-sanjay&theme=paper&radius=12" alt="Profile Preview Soft" />
 
 ### 2. Now Playing Status
 
@@ -125,6 +132,7 @@ Customize your URLs by modifying these query strings. Always replace spaces in y
 ### Global Parameters
 * `theme`: classic, paper, terminal, retro, ocean, crimson, forest, ink
 * `label`: Custom text displayed on the widget header or side tab.
+* `radius`: Controls the corner roundness of every widget. `0` = sharp, structured edges. `12` = soft, modern edges. Applies globally across all widgets.
 
 ### Profile Card
 * `avatar`: Direct URL to an image.
